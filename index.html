@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>typometer</title>
+	<style>
+	.letters {
+		width : 100%;
+	}
+	.correctletter {
+		background : #1da237;
+		float : left
+	}
+	#word-container {
+	clear:both;
+	font-size:20px;
+	letter-spacing :2px;
+	}
+	#result
+	{
+		clear:both;
+		font-size:20px;	
+		letter-spacing :2px;
+	}
+	.letters .letter {
+		float : left;
+	}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+			<a class="navbar-brand" href"#">Typometer</a>
+			</div>
+		<div class="nav navbar-nav navbar-right">
+			<p id="tex" class="navbar-brand"></p>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<textarea id="req" cols="145", rows="20"></textarea>
+		<br/>
+		<br/>
+		<button class="btn btn-default" onclick="submit_it()" id="math">Submit</button>
+	</div>	
+	<div class='container' id='target'>
+		<div class='row col-md-12' id='word-container'>
+		</div>
+		<br/>
+		<br/>
+		<div class='row col-md-12' id='result'></div>
+	</div>
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</html>
+
